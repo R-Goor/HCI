@@ -27,8 +27,14 @@
                 </div>
 
                 <div class="right-wrapper">
-                    <div class="brand">
-                        <div>TRASHERS</div>
+                    <div class="nav-link-wrapper">
+                        <a href="report.html">Log in/Sign Up</a>
+                    </div>
+                    <div class="Language">
+                        
+                    </div>
+                        <div class="nav-link-wrapper"><a href="report.html">English</a></div>
+                        <div class="nav-link-wrapper"><a href="report.html">Spanish</a></div>
                     </div>
                 </div>    
             </div>
@@ -38,23 +44,15 @@
                     <div class="select-item-wrapper">
                         <div class="img-background" style="background-image:url(resources/trash-background.jpg);"></div>
                         <div class="img-text-wrapper">
-                            <div class="logo-wrapper">
-                                <a href="pickup.html">
-                                <img src="resources/trash-pickup.png">
-                                </a>
-                            </div>
                             <div class="subtitle">Pickup some trash for some more monies</div>
                         </div>
                     </div>
 
+                    
                     <div class="select-item-wrapper">
                         <div class="img-background" style="background-image:url(resources/report-trash.jpg);"></div>
                         <div class="img-text-wrapper">
-                            <div class="logo-wrapper">
-                                <a href="report.html">
-                                <img src="resources/report-trash-logo.png">
-                                </a>
-                            </div>
+                        
                             <div class="subtitle">Report trash for a clean city</div>
                         </div>
                     </div>
@@ -66,15 +64,5 @@
 
         </div>
     </body>
-    <script>
-        const selectItems = document.querySelectorAll('.select-item-wrapper')
-        selectItems.forEach(selectItem => {
-            selectItem.addEventListener('mouseover', () => {
-                selectItem.childNodes[1].classList.add('img-darken');
-            })
-            selectItem.addEventListener('mouseout', () => {
-                selectItem.childNodes[1].classList.remove('img-darken');
-            })
-        })
-    </script>
+
 </html>

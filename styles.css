@@ -13,16 +13,26 @@ body {
     display: flex;
     justify-content: space-between;
     padding: 38px;
-    background-color: #463F3A;
+    background-color: #506AD4;
 }
 
 .left-wrapper {
     display: flex;
 }
 
+.right-wrapper {
+    display: flex;
+}
+
+.nav-wrapper > .right-wrapper > div {
+    margin-right: 10px;
+    font-size: 1em;
+    text-transform: uppercase;
+}
+
 .nav-wrapper > .left-wrapper > div {
-    margin-right: 20px;
-    font-size: 0.9em;
+    margin-right: 10px;
+    font-size: 1em;
     text-transform: uppercase;
 }
 
@@ -33,28 +43,36 @@ body {
 }
 
 .nav-link-wrapper a {
-    color: #C2C5BB;
+    color: #FFFCE6;
     text-decoration: none;
     transition: color 0.5s;
 }
-.brand {
-    color: #C2C5BB;
+.language {
+    color: #FFFCE6;
+}
+
+.language-img {
+    height: 10px;
+    width:auto;
+
 }
 
 .nav-link-wrapper:hover {
-    border-bottom: 1px solid #C2C5BB;
+    border-bottom: 1px solid #FFFCE6;
 } 
 
 .nav-link-wrapper a:hover {
-    color: #BF9ACA;
+    color: #FFFCE6;
 } 
 
 .active-nav-link {
-    border-bottom: 1px solid #C2C5BB;
+    border-bottom: 1px solid #F2CC39;
 }
 
+
+
 .active-nav-link a {
-    color: #C2C5BB !important;
+    color: #F2CC39 !important;
 }
 
 .select-items-wrapper {
@@ -63,59 +81,37 @@ body {
 }
 
 .select-item-wrapper {
+    padding-top: 50px;
     position: relative;
 }
 
 .img-background {
-    height: 350px;
-    width: device-width;
-    background-size: cover;
+    height: 250px;
+    background-size:contain;
     background-position: center;
     background-repeat: no-repeat;
 }
 
 .img-text-wrapper {
-    position: absolute;
-    top: 0;
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-    height: 100%;
+    padding-top: 10px;
     text-align: center;
-    padding-left: 100px;
-    padding-right: 100px;
+    color: #506AD4;
 }
 
-.logo-wrapper img {
-    width: 50%;
-    margin-bottom: 20px;
-}
 
-.select-item-wrapper .subtitle {
-    color: transparent;
-    font-weight: 600;
-}
-
-.select-item-wrapper:hover .subtitle {
-    transition: 1s;
-    font-weight: 600;
-    color: #C2C5BB;
-}
-
-.img-darken {
-    transition: 1s;
-    filter: brightness(10%);
+.content-wrapper {
+    background-color: #C2B8AD;
+    height:inherit;
 }
 
 .footer {
-    background-color: #C2C5BB;
-    height: 50vh;
+    background-color: #C2B8AD;
+    height:100cm;
 }
 
 .text-wrapper {
     margin: 0;
     text-align: center;
-    background-color: #C2C5BB;
+    background-color: #FFFCE6;
     height: 1000px;
 }
