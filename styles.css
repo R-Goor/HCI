@@ -1,7 +1,6 @@
 body {
     font-family: 'Open Sans', sans-serif;
     margin: 0px;
-    overflow-y: hidden;
 }
 
 .container {
@@ -12,7 +11,7 @@ body {
 .nav-wrapper {
     display: flex;
     justify-content: space-between;
-    padding: 38px;
+    padding: 2vw;
     background-color: #506AD4;
 }
 
@@ -104,10 +103,7 @@ body {
     height:inherit;
 }
 
-.footer {
-    background-color: #C2B8AD;
-    height:100cm;
-}
+
 
 .text-wrapper {
     margin: 0;
@@ -115,4 +111,9 @@ body {
     background-color: #FFFCE6;
     height: 1000px;
 }
+
+.profile-img {
+    height: 3vw;
+}
+
 

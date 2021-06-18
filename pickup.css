@@ -127,3 +127,23 @@ body {
     display: inline-block;
     justify-content: space-between;
 }
+
+
+.select-items-wrapper {
+    display: inline;
+}
+
+.select-item-wrapper {
+    position: relative;
+}
+
+.img-background {
+    height: 250px;
+    background-size:contain;
+    background-position: right;
+    background-repeat: no-repeat;
+}
+
+.reportField {
+    display: inline-block;
+}

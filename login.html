@@ -5,7 +5,7 @@
         <meta name="viewport" content="width=device-width, initial-scale=1">
         <title>Trash Pickup</title>
         <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@300&display=swap" rel="stylesheet">
-        <link rel="stylesheet" href="pickup.css">
+        <link rel="stylesheet" href="styles.css">
     </head>
     <body>
         <div class="container">
@@ -21,7 +21,7 @@
                     <div class="nav-link-wrapper">
                         <a href="pickup.html">Pickup</a>
                     </div>
-                    <div class="nav-link-wrapper active-nav-link">
+                    <div class="nav-link-wrapper">
                         <a href="report.html">Report</a>
                     </div>
                 </div>
@@ -33,28 +33,17 @@
                 </div>    
             </div>
 
-            <div class="content-wrapper">
-                    
-                    <div class="select-item-wrapper">
-                        <div class="img-background" style="background-image:url(resources/townMap.PNG);"></div>
-                    </div>
-                    <div class="select-item-wrapper">
-                        <div class="img-background" style="background-image:url(resources/townMap2.PNG);"></div>
-                    </div>
+            <div class="loginField">
+                <form>
+                    <label for="email">Email:</label><br>
+                    <input type="text" id="email" name="">
 
-
-                <div class="reportField">
-                    <form>
-                        <label for="desc">Description:</label><br>
-                        <input type="text" id="desc" name="">
-
-                        <label for="pic"><br>Picture:</label><br>
-                        <input type="submit" id="pic" name="">
-                      </form>
-                      <button onclick="window.location.href='report-confirmation.html'">Report!</button>
+                    <label for="pword"><br>Password:</label><br>
+                    <input type="text" id="pword" name="">
+                  </form>
+                  <button onclick="window.location.href='index2.html'">Login!</button>
+                  <br><a href="signupForm.html">Need an account click here!</a>
                 </div>
-            </div>
-
         </div>
     </body>
 
