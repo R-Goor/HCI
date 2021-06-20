@@ -6,11 +6,12 @@
         <title>Trash Pickup</title>
         <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@300&display=swap" rel="stylesheet">
         <link rel="stylesheet" href="styles.css">
+        <script  src="js.js"></script> 
     </head>
     <body>
-        <div class="container">
+        <div id="nav-bar" class="container">
 
-            <div class="nav-wrapper">
+            <!-- <div class="nav-wrapper">
                 <div class="left-wrapper">
                     <div class="nav-link-wrapper">
                         <a href="index.html">Home</a>
@@ -30,7 +31,7 @@
                     <div class="brand">
                         <div>TRASHERS</div>
                     </div>
-                </div>    
+                </div>     -->
             </div>
 
             <div class="loginField">
@@ -41,7 +42,7 @@
                     <label for="pword"><br>Password:</label><br>
                     <input type="text" id="pword" name="">
                   </form>
-                  <button onclick="window.location.href='index2.html'">Login!</button>
+                  <button onclick="handleLogin()">Login!</button>
                   <br><a href="signupForm.html">Need an account click here!</a>
                 </div>
         </div>
