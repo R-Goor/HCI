@@ -1,22 +1,16 @@
 
-let linksTo = [["index.html","about.html","pickup.html","report.html","login.html","",""],
-                ["Home","About","Pickup","Report","Log In","English","Spanish"]];
+let linksTo = [["index.html","about.html","pickup.html","report.html","","","login.html"],
+                ["Home","About","Pickup","Report","Spanish","English","Log In"]];
                 
 
 
-// var fs = require("fs");
+if(!localStorage.getItem("loggedIn"))localStorage.setItem("loggedIn" , "false")
+if(!localStorage.getItem("english"))localStorage.setItem("english" , "true")
 
-// fs.readFile("./resources/bool.txt" , function(err, buf) {
-//     console.log(buf.toString());
-// });
-
-localStorage.setItem("loggedIn" , "false")
-// window.localStorage.setItem
 function showNavBar() {
     let activePage = location.href.split("/")[location.href.split("/").length - 1]
     let container = document.getElementById("nav-bar")
     if(!container) return;
-    // document.getElementById("test").appendChild(container)
     let navWrapper = document.createElement("div")
     navWrapper.setAttribute("class" , "nav-wrapper")
     container.prepend(navWrapper)
@@ -44,21 +38,31 @@ function showNavBar() {
         link.setAttribute("class","nav-link-wrapper")
         if(linksTo[0][i] === activePage) 
             link.setAttribute("class" , "active-nav-link")
+
+        if(localStorage.getItem("english") === "true" && linksTo[1][i] === "English") {
+            link.setAttribute("class" , "active-nav-link")
+        }
+        else if (localStorage.getItem("english") === "false" && linksTo[1][i] === "Spanish") {
+            link.setAttribute("class" , "active-nav-link")
+        }
         let anchor = document.createElement("a")
         if(localStorage.getItem("loggedIn") === "true" && linksTo[0][i] === "login.html") {
             anchor.href = "account.html"
             let pfp = document.createElement("img")
-            pfp.src = "resources/profilePic.jpg"
+            pfp.src = "resources/profile.jpeg"
             pfp.setAttribute("class" , "profile-img")
             anchor.setAttribute("onclick" , "showNavBar()")
             link.appendChild(pfp)
+            anchor.appendChild(pfp)
         }
+
         else {
             anchor.href = linksTo[0][i]
             anchor.innerHTML = linksTo[1][i]
-        anchor.setAttribute("onclick" , "showNavBar()")
-        link.appendChild(anchor)
+            anchor.setAttribute("onclick" , "showNavBar()")
         }
+        link.appendChild(anchor)
+        
         rightWrapper.appendChild(link)
     }
     navWrapper.appendChild(rightWrapper)
@@ -66,8 +70,14 @@ function showNavBar() {
 }
 function handleLogin() {
     localStorage.setItem("loggedIn" , "true")
-    loggedIn = true
     window.location.href = "index.html"
-    // showNavBar()
 }
+function handleLogout() {
+    console.log(localStorage.getItem("loggedIn"))
+    localStorage.setItem("loggedIn" , "false")
+    console.log(localStorage.getItem("loggedIn"))
+    window.location.href = "index.html"
+}
+
+
 window.onload=showNavBar

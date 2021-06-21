@@ -1,7 +1,18 @@
 
-.container {
+/* .container {
     display: grid;
     grid-template-columns: 1fr;
+} */
+body,html {
+    height: 100%;
+}
+
+
+.container {
+    min-height: 100%;
+    height: auto !important;
+    height: 100%;
+    margin: 0 auto -6.5em;
 }
 
 .select-items-wrapper {
@@ -43,13 +54,10 @@
     margin: 0;
     text-align: center;
     background-color: #FFFCE6;
-    height: 1000px;
+    /* width: 100%; */
     padding:5vw;
 }
 
-.profile-img {
-    height: 3vw;
-}
 
 
 
