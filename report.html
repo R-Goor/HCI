@@ -6,56 +6,35 @@
         <title>Trash Pickup</title>
         <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@300&display=swap" rel="stylesheet">
         <link rel="stylesheet" href="pickup.css">
+        <link rel="stylesheet" href="./styleSheets/navbar.css">
         <script  src="js.js"></script> 
     </head>
     <body>
         <div id="nav-bar" class="container">
-
-            <!-- <div class="nav-wrapper">
-                <div class="left-wrapper">
-                    <div class="nav-link-wrapper">
-                        <a href="index.html">Home</a>
+            <div class="content-wrapper">
+                <div class="pickup-container">
+                    <div class="select-item-wrapper">
+                        <img class="report-img" src="resources/townMap.PNG"></div>
                     </div>
-                    <div class="nav-link-wrapper">
-                        <a href="about.html">About</a>
-                    </div>
-                    <div class="nav-link-wrapper">
-                        <a href="pickup.html">Pickup</a>
-                    </div>
-                    <div class="nav-link-wrapper active-nav-link">
-                        <a href="report.html">Report</a>
+                    <div class="select-item-wrapper">
+                        <img class="report-img" src="resources/townMap2.PNG">
                     </div>
                 </div>
-
-                <div class="right-wrapper">
-                    <div class="brand">
-                        <div>TRASHERS</div>
-                    </div>
-                </div>     -->
-            </div>
-
-            <div class="content-wrapper">
-                    
-                    <div class="select-item-wrapper">
-                        <div class="img-background" style="background-image:url(resources/townMap.PNG);"></div>
-                    </div>
-                    <div class="select-item-wrapper">
-                        <div class="img-background" style="background-image:url(resources/townMap2.PNG);"></div>
-                    </div>
-
 
                 <div class="reportField">
-                    <form>
+                    <form id="pickupForm">
                         <label for="desc">Description:</label><br>
                         <input type="text" id="desc" name="">
-
-                        <label for="pic"><br>Picture:</label><br>
-                        <input type="submit" id="pic" name="">
+                        <br>
+                        <div id="attachment">
+                            <label for="pic"><br>Attach photo:</label>
+                            <input type="file" id="pic" name="">
+                        </div>
+                        <br>
+                        <button onclick="window.location.href='report-confirmation.html'">Report!</button>
                       </form>
-                      <button onclick="window.location.href='report-confirmation.html'">Report!</button>
                 </div>
             </div>
-
         </div>
     </body>
 

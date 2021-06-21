@@ -1,0 +1,19 @@
+.buttons-container {
+    margin: auto;
+
+    width: 40%;
+    border: 3px solid #a7a394; 
+    margin-top: 2vh;
+    padding:2vh;
+    /* : middle; */
+}
+.buttons-container > button {
+    display: flex;
+    margin:2vh;
+    padding: 2.5vw ;
+    width: 30%;
+    text-align: center;
+    justify-content: space-around;
+    margin-left: 14vw
+
+}

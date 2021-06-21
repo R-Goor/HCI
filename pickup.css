@@ -65,7 +65,7 @@ body {
 } 
 
 .active-nav-link {
-    border-bottom: 1px solid #F2CC39;
+    border-bottom: 1px solid #a7a394;
 }
 
 
@@ -94,9 +94,15 @@ body {
 
 }
 
-.set-location-wrapper { 
-    display: inline-block;
+.ongoing {
+    color:red;
+}
+.select-location-wrapper { 
+    /* display: inline-block; */
     justify-content: space-between;
+    border: 4px solid #a7a394; 
+    padding-left: 2vw
+    /* display:none; */
 }
 
 .pickup-text {
@@ -107,26 +113,32 @@ body {
 
 
 .trashyPics {
-    display: inline-block;
+    display: flex;
+    
     vertical-align: top;
-    padding-top: 5vw;
+    /* padding-top: 5vw; */
+
 }
 
 
 .loc-img {
-    width: 250px;
-    height: 250px;
-    background-size:contain;
-    background-position: left;
-    background-repeat: no-repeat;
-    display: inline-block;
+    width: 35%;
+    vertical-align: middle; 
+    padding:2vh 1vw;
+    padding-top: 2vh;
+
+    /* display: inline-block; */
+    /* float: left; */
 
 }
+#images {
+    margin-left: 19vw;
+}
 
-.description-img { 
+/* .description-img { 
     display: inline-block;
     justify-content: space-between;
-}
+} */
 
 
 .select-items-wrapper {
@@ -134,16 +146,49 @@ body {
 }
 
 .select-item-wrapper {
-    position: relative;
-}
+    display: flex;
 
+    /* position: relative; */
+    
+}
+.pickupButtons {
+    text-align: center;
+    padding-top: 2vh;
+}
 .img-background {
     height: 250px;
     background-size:contain;
     background-position: right;
     background-repeat: no-repeat;
 }
-
+ /* .pickup-container { */
+     /* display: flex; */
+     /* float: right; */
+     /* margin: 0px auto; */
+ /* } */
+.report-img {
+    height: 250px;
+    margin: 0 auto;
+    /* float: right; */
+}
+#pickupForm {
+    text-align: center;
+}
+#pickupForm > button {
+    display: flex;
+    margin: 0 auto;
+}
 .reportField {
-    display: inline-block;
+    margin: auto;
+    width: 50%;
+    border: 3px solid #a7a394; 
+    margin-top: 2vh;
+}
+#pickupForm > label, #pickupForm input {
+    padding: 6px 0px;
+    /* display: none; */
+}
+#attachment {
+    padding-left: 6vw;
+
 }

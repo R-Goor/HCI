@@ -1,11 +1,21 @@
 
 let linksTo = [["index.html","about.html","pickup.html","report.html","login.html","",""],
-                ["Home","About","Pickup","Report","Log In","English","Spanish"]]
+                ["Home","About","Pickup","Report","Log In","English","Spanish"]];
+                
+
+
+// var fs = require("fs");
+
+// fs.readFile("./resources/bool.txt" , function(err, buf) {
+//     console.log(buf.toString());
+// });
+
 localStorage.setItem("loggedIn" , "false")
 // window.localStorage.setItem
 function showNavBar() {
     let activePage = location.href.split("/")[location.href.split("/").length - 1]
     let container = document.getElementById("nav-bar")
+    if(!container) return;
     // document.getElementById("test").appendChild(container)
     let navWrapper = document.createElement("div")
     navWrapper.setAttribute("class" , "nav-wrapper")
@@ -58,6 +68,6 @@ function handleLogin() {
     localStorage.setItem("loggedIn" , "true")
     loggedIn = true
     window.location.href = "index.html"
-    showNavBar()
+    // showNavBar()
 }
 window.onload=showNavBar

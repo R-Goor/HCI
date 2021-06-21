@@ -1,0 +1,14 @@
+ table,tr,td {
+    border: 2px solid black;
+    border-collapse: collapse;
+    text-align: center;
+  }
+  .rewards {
+      width: 50%;
+      padding-left: 13vw;
+  }
+  table {
+      float:right;
+      margin:1vw;
+      width: 25%;
+  }
