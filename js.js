@@ -67,16 +67,30 @@ function showNavBar() {
     }
     navWrapper.appendChild(rightWrapper)
 
+    let logos = ["./resources/fb.png" , "resources/yt.png" , "resources/li.png"]
+    let alts = ["facebook logo" , "youtube logo" , "linkedin logo"]
+    var footer = document.getElementsByTagName("footer")[0]
+    if(!footer) return
+    for(var i = 0; i < 3; i++) {
+        var a = footer.getElementsByTagName("a")[i + 1]
+        var img = a.getElementsByTagName("img")[0]
+        img.setAttribute("src" , logos[i])
+        img.setAttribute("alt" , alts[0])
+        img.setAttribute("height" , "25")
+    }
+
 }
 function handleLogin() {
     localStorage.setItem("loggedIn" , "true")
     window.location.href = "index.html"
 }
 function handleLogout() {
-    console.log(localStorage.getItem("loggedIn"))
     localStorage.setItem("loggedIn" , "false")
-    console.log(localStorage.getItem("loggedIn"))
     window.location.href = "index.html"
+}
+
+function handleReport() {
+    window.location.href='report-confirmation.html'
 }
 
 

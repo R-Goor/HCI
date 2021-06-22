@@ -14,7 +14,7 @@ body {
     justify-content: space-between;
     padding: 2vw;
     /* margin-bottom: 10px; */
-    background-color: #506AD4;
+    background-color: #010726;
 }
 
 /* .left-wrapper , .right-wrapper {
@@ -54,17 +54,17 @@ body {
 }
 
 .language-img {
-    height: 10px;
+    height:10px;
     width:auto;
 
 }
 
 .nav-link-wrapper:hover {
-    border-bottom: 1px solid #FFFCE6;
+    border-bottom: 1px solid #F2E205;
 } 
 
 .nav-link-wrapper a:hover {
-    color: #FFFCE6;
+    color: #F2E205;
 } 
 
 .active-nav-link {
@@ -75,7 +75,7 @@ body {
 
 
 .active-nav-link a {
-    color: #F2CC39 !important;
+    color: #F2E205 !important;
 }
 
 .profile-img {
@@ -85,8 +85,44 @@ body {
 
 footer {
     text-align: center;
-    background-color: DarkSalmon;
+    background-color: #79AEF2;
     color: white;
     
     bottom:0;
   }
+
+
+  
+button {
+    background-color: #6DBFF2; /* Green */
+    border: none;
+    color: white;
+    padding: 15px 32px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;
+    border-radius: 25px;
+  }
+
+button:hover {
+    border: 3px solid #010726;
+    cursor: pointer;
+}
+
+
+
+  a.nostyle:link {
+    /* text-decoration: inherit; */
+    color: inherit;
+}
+
+a.nostyle:visited {
+    /* text-decoration: inherit; */
+    
+    color: inherit;
+}
+.nostyle:hover {
+    color:#F20505;
+} 
+

@@ -22,7 +22,7 @@
                 </div>
 
                 <div class="reportField">
-                    <form id="pickupForm">
+                    <form onsubmit="event.preventDefault();" id="pickupForm">
                         <label for="desc">Description:</label><br>
                         <input type="text" id="desc" name="">
                         <br>
@@ -31,7 +31,7 @@
                             <input type="file" id="pic" name="">
                         </div>
                         <br>
-                        <button onclick="window.location.href='report-confirmation.html'">Report!</button>
+                        <button onclick="handleReport()">Report!</button>
                       </form>
                 </div>
             </div>
