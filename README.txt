@@ -1,0 +1,1 @@
+index.html is the home page

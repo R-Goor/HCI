@@ -5,25 +5,25 @@
         <meta name="viewport" content="width=device-width, initial-scale=1">
         <title>Trash Pickup</title>
         <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@300&display=swap" rel="stylesheet">
-        <link rel="stylesheet" href="pickup.css">
+        <link rel="stylesheet" href="./styleSheets/pickup.css">
         <link rel="stylesheet" href="./styleSheets/navbar.css">
-        <script  src="js.js"></script> 
+        <script  src="./scripts/js.js"></script> 
     </head>
     <body>
         <div id="nav-bar" class="container">
             <div class="content-wrapper">
                 <div class="pickup-container">
                     <div class="select-item-wrapper">
-                        <img class="report-img" src="resources/townMap.PNG"></div>
+                        <img class="report-img" src="resources/townMap.PNG" alt="Map of Lobitos"></div>
                     </div>
                     <div class="select-item-wrapper">
-                        <img class="report-img" src="resources/townMap2.PNG">
+                        <img class="report-img" src="resources/townMap2.PNG" alt="Map of Piedritas">
                     </div>
                 </div>
 
                 <div class="reportField">
                     <form onsubmit="event.preventDefault();" id="pickupForm">
-                        <label for="desc">Description:</label><br>
+                        <label for="desc">Description (optional):</label><br>
                         <input type="text" id="desc" name="">
                         <br>
                         <div id="attachment">
